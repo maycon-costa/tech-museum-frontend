@@ -1,0 +1,24 @@
+/* Container do card de estatística */
+.stat-card {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease-in-out;
+  cursor: default; /* Mostra que é apenas leitura, mas interativo ao hover */
+}
+
+/* Efeito de interatividade ao passar o rato (Hover) */
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(13, 59, 102, 0.15) !important;
+  border-color: #0d3b66; /* Azul do Museu Tech */
+}
+
+/* Transição suave para o ícone */
+.stat-card:hover .stat-icon i {
+  color: #0d3b66 !important;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
